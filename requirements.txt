@@ -7,5 +7,6 @@ psutil
 pykeyboard
 aiohttp
 aiofiles
+requests
 Pillow
 gofile2
