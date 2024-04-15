@@ -115,7 +115,7 @@ class UnzipperBot(Client):
                 await self.send_video(
                     chat_id=c_id,
                     video=doc_f,
-                    caption="**Extracted by @NexaUnzipper_Bot**",
+                    caption="**Extracted by **",
                     duration=int(
                         vid_duration) if vid_duration.isnumeric() else 0,
                     thumb=sthumb,
@@ -127,7 +127,7 @@ class UnzipperBot(Client):
                 await self.send_document(
                     chat_id=c_id,
                     document=doc_f,
-                    caption="**Extracted by @NexaUnzipper_Bot**",
+                    caption="**Extracted by **",
                     thumb=sthumb,
                     progress=progress_for_pyrogram,
                     progress_args=("**Trying to upload 😇** \n", tgupmsg, stm))
