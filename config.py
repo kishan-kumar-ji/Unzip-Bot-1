@@ -4,12 +4,12 @@ import os
 
 class Config(object):
     # Mandotory
-    APP_ID = int(os.environ.get("1821674"))
-    API_HASH = os.environ.get("d552cde6b6e8dfa7caa453e8d759c921")
-    BOT_TOKEN = os.environ.get("5146196225:AAGhFCDQJgx5PWyFhMrYZPcnIXl29L7Blfw")
-    LOGS_CHANNEL = int(os.environ.get("-1001263428248"))
-    BOT_OWNER = int(os.environ.get("764606033"))
-    MONGODB_URL = os.environ.get("mongodb+srv://arup:Arup@2018#cluster0.4auftk4.mongodb.net/?retryWrites=true&w=majority")
+    APP_ID = int(os.environ.get("25252648"))
+    API_HASH = os.environ.get("17a1e3c7f59dd46196f0570f9df34955")
+    BOT_TOKEN = os.environ.get("7199477809:AAHP3l7vMe_U2LiwQNc657mzqLo4f5re-f0")
+    LOGS_CHANNEL = int(os.environ.get("-1002032506013"))
+    BOT_OWNER = int(os.environ.get("6986912824"))
+    MONGODB_URL = os.environ.get("mongodb+srv://alienufowala:kxzen@cluster0.ahif6tl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
     GOFILE_TOKEN = os.environ.get("IRmJgBNNU3wJOgLxaH6bBXm6mcNcf0tg")
     # Optional
     MAX_DOWNLOAD_SIZE = int(os.environ.get("MAX_DOWNLOAD_SIZE")) if os.environ.get("MAX_DOWNLOAD_SIZE") else 10737418240
