@@ -19,7 +19,7 @@ from os import path, remove, stat
 from config import Config
 from pyrogram import Client
 from .caching import STRINGS
-from gofile2 import sync_Gofile
+from gofile2 import Sync_Gofile
 from pyrogram.errors import FloodWait
 from pyrogram.types import CallbackQuery, Message
 from unzipper.database.language import get_language
@@ -96,7 +96,7 @@ class UnzipperBot(Client):
                 # Uploads the file to gofile.io
                 upmsg = await self.send_message(c_id, text=STRINGS[lang]["alert_file_too_large"])
                 try:
-                    ga = sync_Gofile()
+                    ga = Sync_Gofile()
                     gfio = await ga.upload(doc_f)
                     from unzipper import Buttons
                     await upmsg.edit("**Your file has been uploaded to gofile! Click on the below button to download it 👇**", reply_markup=await Buttons.make_button("Gofile link 🔗", url=gfio["downloadPage"]))
